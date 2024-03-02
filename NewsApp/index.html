@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewsApp</title>
+
+    <!-- this is bootstarp -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- this is style css -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="hero">
+        <!-- this is Navbar   -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"
+            ><img width="50px" src="./image/NewsLogo.jpg" alt="image"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"  href="#Genral" id="Genral">Genral</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Buiness" id="Buiness">Buiness</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Technology" id="Technology">Technology</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sports" id="sports">sports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"  href="#Entertainment" id="Entertainment">Entertainment</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="text"
+                placeholder="Search news"
+                aria-label="Search"
+                id="Input"
+              />
+              <button class="btn btn-warning" type="submit" id="SearchBtn">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- this is News App -->
+      <div class="NewsApp container py-5 d-flex gap-3 w-100 flex-wrap">
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://i.blogs.es/ab6f53/maxresdefault/840_560.jpeg"
+            class="card-img-top"
+            alt="image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+
+            <div
+              class="d-flex justify-content-between gap-4 align-items-center"
+            >
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://i.blogs.es/ab6f53/maxresdefault/840_560.jpeg"
+            class="card-img-top"
+            alt="image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+
+            <div
+              class="d-flex justify-content-between gap-4 align-items-center"
+            >
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- this is Footer Seaction -->
+
+      <div class=" bg-black py-4 text-center">
+        <div class=" container-fluid">
+            <h5 class=" text-secondary fw-bold">Code <span class=" text-warning">Logic</span></h5>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- this is script js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- this is javascript link -->
+    <script src="./index.js"></script>
+  </body>
+</html>

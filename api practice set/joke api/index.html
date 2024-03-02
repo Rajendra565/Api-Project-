@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joke</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(107, 107, 27);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        .center{
+            position: relative;
+            /* 
+            position: absolute;
+           top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);*/
+            border-left: 2px solid red;
+            border-top: 2px solid red;
+            border-right: 2px solid rgb(26, 255, 0);
+            border-bottom: 2px solid rgb(26, 255, 0);
+            width: 500px;
+            height: fit-content;
+            padding: 20px;
+            text-align: center;
+            background-color: black;
+            color: #ffffff;
+            border-radius: 20px;
+
+            
+        }
+        
+        .center h1{
+            padding: 20px 0px;
+            transform: scale(2);
+
+        }
+        .center p{
+            text-align: center;
+        }
+        button{
+            padding: 10px;
+            border-radius: 30px;
+            outline: none;
+            border: none;
+            margin-top: 30px;
+            cursor: pointer;
+            background:linear-gradient(to right,red,green);
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class=" center">
+        <h1>🫠</h1>
+        <p class="jock-text"> </p>
+        <button id="btn">Click me</button>
+    </div>
+    <script>
+        const jockText=document.querySelector('.jock-text');
+        const btn=document.getElementById('btn');
+        const url="https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single";
+        btn.addEventListener('click',()=>{
+           getjock();
+        })
+
+       
+        let getjock=()=>{
+            fetch(url)
+            .then((res)=> res.json())
+            .then((date)=>{
+              jockText.textContent=`${date.joke}`;
+
+            })
+        }
+        
+   
+        
+
+    </script>
+
+</body>
+</html>
