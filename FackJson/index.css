@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+.hero{
+    width: 80%;
+    margin:0 auto;
+}
+.Heading{
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+.date{
+    width: 340px;
+    background-color:#c1bdbd ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
