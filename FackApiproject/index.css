@@ -1,0 +1,50 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  background:#414141;
+  
+}
+.hero{
+  
+}
+.hero .inner .card-group{
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  
+}
+.hero .inner .card-group .card{
+  width: 30%;
+  height: fit-content;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+}
+.hero .inner .card-group .card .id{
+position: absolute;
+background-color: aliceblue;
+padding: 10px 15px;
+border-radius: 50%;
+right: 0;
+}
+.hero .inner .card-group .card .text
+{
+  padding: 10px;
+
+}
+.hero .inner .card-group .card img{
+  width: 100%;
+
+}
+img{
+  width: 100px;
+}

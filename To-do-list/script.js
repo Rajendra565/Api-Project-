@@ -10,21 +10,19 @@ addBtn.addEventListener('click',function(){
     else{
         let li=document.createElement("li");
         li.innerHTML=inputbox.value;
+        
         listContainer.appendChild(li);
         let span=document.createElement("span");
         span.innerHTML='\u00d7'
+        span.classList.add('remove')
         li.appendChild(span)
-
+        
+        inputbox.value="";
+        const remove=document.querySelector('.remove')
+        remove.addEventListener('click',(e)=>{
+            li.removeChild();
+        })
     }
-    inputbox.value="";
 })
 
 
-listContainer.addEventListener('click',(e)=>{
-    if(e.target.tagName==="li"){
-        e.target.classlist.toggle('checked')
-    }
-    else if(e.target.tagName==="span"){
-        e.target.parentElement.remove();
-    }
-},false)
